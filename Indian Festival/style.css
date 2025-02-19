@@ -1,0 +1,187 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ff9800;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 2rem;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 4px;
+    background-color: white;
+}
+
+/* Header Styles */
+.header {
+    background-color: #ff9800;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Festival Cards Section */
+.festivals {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.festivals h2 {
+    font-size: 2.5rem;
+    color: #ff9800;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.festival-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    animation: popUp 1.5s ease-out;
+}
+
+.festival-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.festival-card p {
+    font-size: 1rem;
+    padding: 1rem;
+    color: #777;
+}
+
+@keyframes popUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #ff9800;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #ff9800;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .navbar .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .navbar .hamburger-menu {
+        display: flex;
+    }
+
+    .navbar input[type="checkbox"]:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .festival-card {
+        width: 80%;
+    }
+
+    .festivals h2 {
+        font-size: 2rem;
+    }
+}

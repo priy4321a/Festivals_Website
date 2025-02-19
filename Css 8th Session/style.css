@@ -1,0 +1,51 @@
+.parent{
+    height: 700px;
+    width: 100%;
+    position: relative;
+}
+.div{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin: 20px;
+}
+#c1{
+    background-color: aqua;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: 4;
+    /* position: fixed;
+    top: 20%; */
+    /* bottom: 50%; */
+    /* right: 50%; */
+}
+#c2{
+    background-color: orangered;
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    z-index: 2;
+    /* position: absolute; */
+    /* left: 100px; */
+    /* position: sticky;
+    top: 50px;
+    bottom: 0; */
+    /* left: 50px; */
+    /* right: 0; */
+}
+#c3{
+    background-color: green;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    z-index: 3;
+}
+#c4{
+    background-color: olive;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    z-index: 1;
+}
+/* When absolute is used then why we use relative  */

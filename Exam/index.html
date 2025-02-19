@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghumakkar - Travel and Adventure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .hero {
+            background-image: url('./back.webp'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            height: 60vh;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .section p {
+            margin-bottom: 40px;
+            font-size: 1.1em;
+            color: #666;
+        }
+        .services, .blog {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .service, .blog-post {
+            flex: 1 1 300px;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .service img, .blog-post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            display: flex;
+        }
+        .service h3, .blog-post h3 {
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+        .cta-buttons {
+            margin-top: 20px;
+        }
+        .cta-buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 style="color: #007bff;">Ghumakkar</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-links">
+            <a href="#">Login</a> / <a href="#">Signup</a>
+        </div>
+    </header>
+    <section class="hero">
+        <h1>Ghumo with Ghumakkar</h1>
+        <p>Discover new places and adventures with us.</p>
+        <div class="cta-buttons">
+            <a href="#">Book Now</a>
+            <a href="#">Learn More</a>
+        </div>
+    </section>
+    <section class="section about">
+        <h2>About Us</h2>
+        <p>At Ghumakkar, we believe that traveling is more than just visiting places; it's about creating lifelong memories and enriching experiences. Our team of travel experts is dedicated to curating the best travel plans that cater to your interests, ensuring you get the most out of every trip.</p>
+        <div class="services">
+            <div class="service">
+                <img src="girl.jpg" alt="Personalized Itineraries">
+                <h3>Personalized Itineraries</h3>
+                <p>Tailor-made travel plans designed just for you.</p>
+            </div>
+            <div class="service">
+                <img src="./expert_guide.jpg" alt="Expert Guides">
+                <h3>Expert Guides</h3>
+                <p>Experience destinations with knowledgeable local guides.</p>
+            </div>
+            <div class="service">
+                <img src="./deals_best.jpg" alt="Best Deals">
+                <h3>Best Deals</h3>
+                <p>Affordable travel packages with premium services.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section blog">
+        <h2>Travel Blog</h2>
+        <p>Stay inspired with our latest travel tips, guides, and destination highlights.</p>
+        <div class="blog-posts">
+            <div class="blog-post">
+                <img src="./top_destination.jpg" alt="Top 10 Destinations in 2025">
+                <h3>Top 10 Destinations in 2025</h3>
+                <p>Discover the most breathtaking places to visit this year.</p>
+                <a href="#">Read More →</a>
+            </div>
+            <div class="blog-post">
+                <img src="./money.webp" alt="Travel Hacks for Budget Trips">
+                <h3>Travel Hacks for Budget Trips</h3>
+                <p>Save money while enjoying an incredible travel experience.</p>
+                <a href="#">Read More →</a>
+            </div>
+        </div>
+    </section>
+    <section class="section contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Feel free to reach out to us.</p>
+        <a href="#">Send Message</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Ghumakkar. All rights reserved.</p>
+    </footer>
+</body>
+</html>

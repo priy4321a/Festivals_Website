@@ -1,0 +1,197 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #ffecb3;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 1rem;
+}
+
+
+
+/* Header */
+.header {
+    background-color: #ff9800;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 2rem;
+    position: relative;
+    animation: headerAnimation 2s ease-in-out;
+}
+
+.header-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    animation: slideIn 2s ease-out;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes headerAnimation {
+    0% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* About Chhath Section */
+.about-chhath {
+    padding: 3rem 1.5rem;
+    background: #fffde7;
+    text-align: center;
+}
+
+.about-chhath h2 {
+    font-size: 2.5rem;
+    color: #ff9800;
+    font-weight: bold;
+    animation: fadeIn 2s ease-out;
+}
+
+.about-chhath p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Celebration Section */
+.celebrations {
+    padding: 3rem 1.5rem;
+    background: #ffffff;
+    text-align: center;
+}
+
+.celebrations h2 {
+    font-size: 2.5rem;
+    color: #ff9800;
+    margin-bottom: 2rem;
+}
+
+.celebration-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    animation: popUp 1.5s ease-out;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #ff9800;
+}
+
+.card p {
+    font-size: 1rem;
+    padding: 1rem;
+    color: #777;
+}
+
+@keyframes popUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .celebration-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    .celebration-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .about-chhath p {
+        font-size: 0.9rem;
+    }
+}
